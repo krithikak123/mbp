@@ -46,7 +46,7 @@ pipeline{
                 echo "deploying to UAT"
             }
         }
-        stage("maven build"){
+        stage("prod"){
             when{
                 branch 'master'
             }
