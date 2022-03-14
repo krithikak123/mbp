@@ -3,7 +3,6 @@ pipeline{
     tools {
        maven 'maven3'
     }
-
     stages{
         stage("maven build"){
             when{
@@ -46,7 +45,7 @@ pipeline{
                 echo "deploying to UAT"
             }
         }
-        stage("maven build"){
+        stage("prod"){
             when{
                 branch 'master'
             }
